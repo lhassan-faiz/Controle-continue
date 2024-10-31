@@ -1,0 +1,18 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: r1
+#          uri: http://localhost:8010
+#          predicates:
+#            - Path=/v1/Equipes/**
+#        - id: r2
+#          uri: http://localhost:8044
+#          predicates:
+#            - Path=/v1/Joueurs/**
+#
+#  application:
+#    name: gitway
+#
+#server:
+#  port: 8888
